@@ -1,0 +1,32 @@
+# Core Libraries
+pandas              # For data manipulation and preprocessing
+numpy               # For numerical operations
+
+# Data Ingestion and Scraping
+telethon            # For interacting with Telegram API to scrape messages
+beautifulsoup4      # For HTML parsing in case of web scraping
+requests            # For making HTTP requests
+
+# Natural Language Processing (NLP)
+transformers        # Hugging Face Transformers library for model fine-tuning (XLM-Roberta, BERT, etc.)
+datasets            # Hugging Face Datasets library for loading and processing the NER dataset
+sentencepiece       # For tokenization (necessary for certain pre-trained models)
+
+# Machine Learning
+scikit-learn        # For evaluation metrics and model comparison
+torch               # PyTorch deep learning framework (required for Transformers)
+tensorflow          # Optional: If you decide to use TensorFlow-based models or functionalities
+seqeval             # For evaluating sequence labeling tasks (NER performance metrics)
+
+# Model Interpretability
+shap                # SHAP (SHapley Additive exPlanations) for model interpretability
+lime                # LIME (Local Interpretable Model-agnostic Explanations) for model interpretability
+
+# Visualization
+matplotlib          # For visualizations
+seaborn             # For statistical data visualization
+plotly              # Interactive visualizations
+
+# Testing and Debugging
+pytest              # For writing and running tests
+pytest-cov          # To check test coverage
