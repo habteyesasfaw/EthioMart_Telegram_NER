@@ -7,6 +7,7 @@ __pycache__/
 venv/
 .env/
 *.env
+.env
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -15,6 +16,12 @@ venv/
 data/
 *.csv
 *.json
+*.docx
+*.txt
+*.xlsx
+data/photos/
+*.JPG
+
 
 # Output files and directories
 reports/
