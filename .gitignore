@@ -13,14 +13,14 @@ venv/
 .ipynb_checkpoints/
 
 # Data files
-data/
-*.csv
-*.json
-*.docx
-*.txt
-*.xlsx
-data/photos/
-*.JPG
+# data/
+# *.csv
+# *.json
+# *.docx
+# *.txt
+# *.xlsx
+# data/photos/
+# *.JPG
 
 
 # Output files and directories
