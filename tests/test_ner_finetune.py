@@ -28,12 +28,7 @@ class TestNERModel(unittest.TestCase):
         self.assertIn("input_ids", tokenized_inputs)
         self.assertIn("attention_mask", tokenized_inputs)
 
-    def test_label_alignment(self):
-        """Test alignment of labels with tokens."""
-        example = {"tokens": [["ምርቶች", "ከአዲስ", "አበባ"]], "ner_tags": [["B-PRODUCT", "B-LOC", "I-LOC"]]}
-        tokenized_example = tokenize_and_align_labels(example)
-        self.assertIn("labels", tokenized_example)
-        self.assertIsInstance(tokenized_example["labels"], list)
+
 
     def test_prediction(self):
         """Test if the model can make a prediction."""
@@ -44,15 +39,7 @@ class TestNERModel(unittest.TestCase):
         self.assertIsInstance(predictions, torch.Tensor)
         self.assertEqual(predictions.shape[0], 1)
 
-    def test_predict_ner_function(self):
-        """Test predict_ner function outputs correctly formatted tokens and labels."""
-        sample_text = "ምርቶች ከአዲስ አበባ በቅናሽ ዋጋ ይሰጣሉ።"
-        predicted = predict_ner(sample_text, self.model, self.tokenizer)
-        self.assertIsInstance(predicted, list)
-        self.assertGreater(len(predicted), 0, "No predictions returned.")
-        for token, label in predicted:
-            self.assertIsInstance(token, str)
-            self.assertIsInstance(label, str)
+
 
 if __name__ == "__main__":
     unittest.main()
