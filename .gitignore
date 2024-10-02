@@ -22,6 +22,14 @@ venv/
 # data/photos/
 # *.JPG
 
+#Model
+models/
+*.json
+*.safetensors
+*.model
+*.json
+
+
 
 # Output files and directories
 reports/
